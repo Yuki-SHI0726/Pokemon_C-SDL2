@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4526C83B-C038-41F5-B158-56CA462F152F}</ProjectGuid>
+    <RootNamespace>GAP275</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Programming_ZixuanShi_Pokemon</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_mixer\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL2_ttf\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL2_ttf\lib\x86;$(SolutionDir)lib\SDL_Image\lib\x86;$(SolutionDir)lib\SDL\lib\x86;$(SolutionDir)lib\SDL_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x86\SDL2.dll" "$(OutDir)" 
+
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libpng16-16.dll " "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libtiff-5.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x86\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x86\libfreetype-6.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libvorbisfile-3.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y
+
+copy "$(SolutionDir)lib\WindowsDll\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_mixer\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL2_ttf\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\zlib1.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x64\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x64\libfreetype-6.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libvorbisfile-3.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y
+
+copy "$(SolutionDir)lib\WindowsDll\*.dll" "$(OutDir)" </Command>
+    </PostBuildEvent>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL2_ttf\lib\x64;$(SolutionDir)lib\SDL_Image\lib\x64;$(SolutionDir)lib\SDL_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_mixer\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL2_ttf\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x86;$(SolutionDir)lib\SDL2_ttf\lib\x86;$(SolutionDir)lib\SDL_Image\lib\x86;$(SolutionDir)lib\SDL_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x86\SDL2.dll" "$(OutDir)" 
+
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libpng16-16.dll " "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libtiff-5.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x86\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x86\libfreetype-6.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libvorbisfile-3.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y
+
+copy "$(SolutionDir)lib\WindowsDll\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_mixer\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL2_ttf\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL_Image\lib\x64;$(SolutionDir)lib\SDL_mixer\lib\x64;$(SolutionDir)lib\SDL2_ttf\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\zlib1.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x64\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL2_ttf\lib\x64\libfreetype-6.dll" "$(OutDir)"
+
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libogg-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libvorbis-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libvorbisfile-3.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y
+
+copy "$(SolutionDir)lib\WindowsDll\*.dll" "$(OutDir)" </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AIComponent.cpp" />
+    <ClCompile Include="AIHalfHpState.cpp" />
+    <ClCompile Include="Pokemon.cpp" />
+    <ClCompile Include="AnimationComponent.cpp" />
+    <ClCompile Include="Bush.cpp" />
+    <ClCompile Include="CharizardInGame.cpp" />
+    <ClCompile Include="Charmander.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MusicReferee.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="Pikachu.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ColliderComponent.cpp" />
+    <ClCompile Include="CollidableStaticObject.cpp" />
+    <ClCompile Include="CollidableMovingObject.cpp" />
+    <ClCompile Include="CollisionReferee.cpp" />
+    <ClCompile Include="Pokeball.cpp" />
+    <ClCompile Include="RandomNumberGenerator.cpp" />
+    <ClCompile Include="SaveSystem.cpp" />
+    <ClCompile Include="SoundEffectComponent.cpp" />
+    <ClCompile Include="SoundEffectReferee.cpp" />
+    <ClCompile Include="StateCombat.cpp" />
+    <ClCompile Include="StateCredits.cpp" />
+    <ClCompile Include="PokemonGame.cpp" />
+    <ClCompile Include="StateGameplay.cpp" />
+    <ClCompile Include="StateLoad.cpp" />
+    <ClCompile Include="StateLoss.cpp" />
+    <ClCompile Include="StateMainMenu.cpp" />
+    <ClCompile Include="SDLGame.cpp" />
+    <ClCompile Include="StateTitleScreen.cpp" />
+    <ClCompile Include="StateWin.cpp" />
+    <ClCompile Include="StaticImageObject.cpp" />
+    <ClCompile Include="UIButton.cpp" />
+    <ClCompile Include="UIHealthBar.cpp" />
+    <ClCompile Include="UITextField.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AIComponent.h" />
+    <ClInclude Include="AIHalfHpState.h" />
+    <ClInclude Include="Pokemon.h" />
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="Bush.h" />
+    <ClInclude Include="BushConstants.h" />
+    <ClInclude Include="CharizardConstants.h" />
+    <ClInclude Include="CharizardInGame.h" />
+    <ClInclude Include="Charmander.h" />
+    <ClInclude Include="CharmanderConstants.h" />
+    <ClInclude Include="MusicConstants.h" />
+    <ClInclude Include="MusicReferee.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="Pikachu.h" />
+    <ClInclude Include="PikachuConstants.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ColliderComponent.h" />
+    <ClInclude Include="CollidableMovingObject.h" />
+    <ClInclude Include="CollidableStaticObject.h" />
+    <ClInclude Include="CollisionReferee.h" />
+    <ClInclude Include="CreditsConstants.h" />
+    <ClInclude Include="PlayerConstants.h" />
+    <ClInclude Include="Pokeball.h" />
+    <ClInclude Include="PokeballConstants.h" />
+    <ClInclude Include="PokemonSizeConstants.h" />
+    <ClInclude Include="RandomNumberGenerator.h" />
+    <ClInclude Include="SaveSystem.h" />
+    <ClInclude Include="SoundEffectComponent.h" />
+    <ClInclude Include="SoundEffectReferee.h" />
+    <ClInclude Include="StateCombat.h" />
+    <ClInclude Include="StateCombatConstants.h" />
+    <ClInclude Include="StateCredits.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameStateMachine.h" />
+    <ClInclude Include="StateGamePlayConstants.h" />
+    <ClInclude Include="PokemonGame.h" />
+    <ClInclude Include="StateGameplay.h" />
+    <ClInclude Include="StateLoad.h" />
+    <ClInclude Include="StateLoadConstants.h" />
+    <ClInclude Include="StateLoss.h" />
+    <ClInclude Include="StateLossConstants.h" />
+    <ClInclude Include="StateMainMenu.h" />
+    <ClInclude Include="SDLGame.h" />
+    <ClInclude Include="StateMainMenuConstants.h" />
+    <ClInclude Include="StateTitleScreen.h" />
+    <ClInclude Include="StateWin.h" />
+    <ClInclude Include="StaticImageObject.h" />
+    <ClInclude Include="StateTitleScreenConstants.h" />
+    <ClInclude Include="UIButton.h" />
+    <ClInclude Include="UIConstants.h" />
+    <ClInclude Include="UIHealthBar.h" />
+    <ClInclude Include="UITextField.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="StateWinConstants.h" />
+    <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

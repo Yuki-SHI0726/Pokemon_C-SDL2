@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Vector2D">
+      <UniqueIdentifier>{d5f5c568-78c7-4008-971f-c70b67a99684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{3a52ae90-d741-498b-b74d-5931c22e1d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\AnimationComponent">
+      <UniqueIdentifier>{bdfe9010-ddc6-43c0-a644-99a3c90fb011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\CollisionComponent">
+      <UniqueIdentifier>{22e6805e-4c86-49ed-89fa-634157b9873c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState">
+      <UniqueIdentifier>{b5ac35f0-8c0e-4296-b625-f1cd29445521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{b0cae0a3-9b91-4bdb-9092-0342a69e993b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{8cd82298-b4aa-474a-b92a-dec3f9c0d8ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\MainMenu">
+      <UniqueIdentifier>{ea04af97-3542-4d22-91bb-792155333ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\GamePlay">
+      <UniqueIdentifier>{fa194110-e083-4a90-9a6c-63186d9aa091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\Credits">
+      <UniqueIdentifier>{c1eca09b-5113-444c-9e45-423c3ac2bdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableMovingObjects">
+      <UniqueIdentifier>{1c958220-fa85-4e20-aa72-95c5bc5a26f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableStaticObject">
+      <UniqueIdentifier>{128f91bd-bbf3-460d-babf-2b42ed9750a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableMovingObjects\Player">
+      <UniqueIdentifier>{ab899e45-2d0b-448f-9378-7f547bdf222f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\TitleScreen">
+      <UniqueIdentifier>{06deea05-721e-4521-b20a-0050b0b78ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Pokemon">
+      <UniqueIdentifier>{d2d845cb-8a4a-4799-9d84-156f7a923510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Pokemon\Charizard">
+      <UniqueIdentifier>{25e729af-b174-4cec-aff2-a2314ec5007e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableStaticObject\Pokeball">
+      <UniqueIdentifier>{be18f9d8-344a-4125-9c8c-9b0614af11bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{1fd597d9-7f44-428f-b2a6-9214dc4d5335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\Loss">
+      <UniqueIdentifier>{01fa53bb-84f8-4115-b06e-3cacad0847e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\Win">
+      <UniqueIdentifier>{a78bdec9-88ca-4e75-9be9-a9e91ac51477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{60fa956d-8d03-44cc-9d0a-0d99ef6e2184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Music">
+      <UniqueIdentifier>{123320ec-64ec-4915-983e-b51db316b318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\SoundEffectComponent">
+      <UniqueIdentifier>{9fdda1e2-d61d-48cc-a4cc-c9a93e11c8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\Combat">
+      <UniqueIdentifier>{b3835a6b-5c2b-4d34-bdc6-2bcca041fcaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Pokemon\Charmander">
+      <UniqueIdentifier>{17670c88-8068-4b8e-a9b8-108b5a3ebd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Pokemon\Pikachu">
+      <UniqueIdentifier>{10ba3319-6e2a-4581-b952-68f0714cfb7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\61%25-100%25HealthState">
+      <UniqueIdentifier>{594f372d-91de-4ebd-b49a-8e3ebd4bf47c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\31%25-61%25HealthState">
+      <UniqueIdentifier>{bbfd5e63-1f45-4cb3-abd0-7bcdf70930e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\1%25-30%25HealthState">
+      <UniqueIdentifier>{0343f788-35d3-4b89-b5cf-956bf551c4b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Random">
+      <UniqueIdentifier>{8803798d-d8a4-4f1a-a1ba-63932954abd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableStaticObject\Wall">
+      <UniqueIdentifier>{3e35225d-d180-4bea-8321-b1d54e2af908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\CollidableStaticObject\Bush">
+      <UniqueIdentifier>{8c5556b6-319b-4626-9232-84532ab62977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle System">
+      <UniqueIdentifier>{cab70bc2-dd33-466f-b390-e7c60c112024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Save System">
+      <UniqueIdentifier>{f01ffaac-b2a4-4c44-984a-6132dbfd89fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState\Load">
+      <UniqueIdentifier>{a77c1db9-75ff-415d-a97d-c28394a7786a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StaticImageObject">
+      <UniqueIdentifier>{2141c888-b167-42f7-8672-1a42f43af14f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationComponent.cpp">
+      <Filter>Components\AnimationComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderComponent.cpp">
+      <Filter>Components\CollisionComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionReferee.cpp">
+      <Filter>Components\CollisionComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="UITextField.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIButton.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>Vector2D</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMainMenu.cpp">
+      <Filter>GameState\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="StateGameplay.cpp">
+      <Filter>GameState\GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="StateCredits.cpp">
+      <Filter>GameState\Credits</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableMovingObject.cpp">
+      <Filter>GameObject\CollidableMovingObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableStaticObject.cpp">
+      <Filter>GameObject\CollidableStaticObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticImageObject.cpp">
+      <Filter>StaticImageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>GameObject\CollidableMovingObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="StateTitleScreen.cpp">
+      <Filter>GameState\TitleScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="PokemonGame.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="CharizardInGame.cpp">
+      <Filter>GameObject\Pokemon\Charizard</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokeball.cpp">
+      <Filter>GameObject\CollidableStaticObject\Pokeball</Filter>
+    </ClCompile>
+    <ClCompile Include="UIHealthBar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StateLoss.cpp">
+      <Filter>GameState\Loss</Filter>
+    </ClCompile>
+    <ClCompile Include="StateWin.cpp">
+      <Filter>GameState\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicReferee.cpp">
+      <Filter>Music</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffectComponent.cpp">
+      <Filter>Components\SoundEffectComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEffectReferee.cpp">
+      <Filter>Components\SoundEffectComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="StateCombat.cpp">
+      <Filter>GameState\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Charmander.cpp">
+      <Filter>GameObject\Pokemon\Charmander</Filter>
+    </ClCompile>
+    <ClCompile Include="Pikachu.cpp">
+      <Filter>GameObject\Pokemon\Pikachu</Filter>
+    </ClCompile>
+    <ClCompile Include="AIHalfHpState.cpp">
+      <Filter>AI\31%25-61%25HealthState</Filter>
+    </ClCompile>
+    <ClCompile Include="AIComponent.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveSystem.cpp">
+      <Filter>Save System</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomNumberGenerator.cpp">
+      <Filter>Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>GameObject\CollidableStaticObject\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Bush.cpp">
+      <Filter>GameObject\CollidableStaticObject\Bush</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Particle System</Filter>
+    </ClCompile>
+    <ClCompile Include="StateLoad.cpp">
+      <Filter>GameState\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Vector2D</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationComponent.h">
+      <Filter>Components\AnimationComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionReferee.h">
+      <Filter>Components\CollisionComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderComponent.h">
+      <Filter>Components\CollisionComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameConstants.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStateMachine.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="UITextField.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIButton.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMainMenu.h">
+      <Filter>GameState\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGameplay.h">
+      <Filter>GameState\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMainMenuConstants.h">
+      <Filter>GameState\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="StateCredits.h">
+      <Filter>GameState\Credits</Filter>
+    </ClInclude>
+    <ClInclude Include="CreditsConstants.h">
+      <Filter>GameState\Credits</Filter>
+    </ClInclude>
+    <ClInclude Include="StateGamePlayConstants.h">
+      <Filter>GameState\GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableMovingObject.h">
+      <Filter>GameObject\CollidableMovingObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableStaticObject.h">
+      <Filter>GameObject\CollidableStaticObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticImageObject.h">
+      <Filter>StaticImageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GameObject\CollidableMovingObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerConstants.h">
+      <Filter>GameObject\CollidableMovingObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="StateTitleScreen.h">
+      <Filter>GameState\TitleScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="StateTitleScreenConstants.h">
+      <Filter>GameState\TitleScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonGame.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="CharizardInGame.h">
+      <Filter>GameObject\Pokemon\Charizard</Filter>
+    </ClInclude>
+    <ClInclude Include="CharizardConstants.h">
+      <Filter>GameObject\Pokemon\Charizard</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokeball.h">
+      <Filter>GameObject\CollidableStaticObject\Pokeball</Filter>
+    </ClInclude>
+    <ClInclude Include="PokeballConstants.h">
+      <Filter>GameObject\CollidableStaticObject\Pokeball</Filter>
+    </ClInclude>
+    <ClInclude Include="UIHealthBar.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIConstants.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLoss.h">
+      <Filter>GameState\Loss</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLossConstants.h">
+      <Filter>GameState\Loss</Filter>
+    </ClInclude>
+    <ClInclude Include="StateWin.h">
+      <Filter>GameState\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="StateWinConstants.h">
+      <Filter>GameState\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="AIComponent.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicReferee.h">
+      <Filter>Music</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicConstants.h">
+      <Filter>Music</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffectComponent.h">
+      <Filter>Components\SoundEffectComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEffectReferee.h">
+      <Filter>Components\SoundEffectComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="StateCombat.h">
+      <Filter>GameState\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Charmander.h">
+      <Filter>GameObject\Pokemon\Charmander</Filter>
+    </ClInclude>
+    <ClInclude Include="CharmanderConstants.h">
+      <Filter>GameObject\Pokemon\Charmander</Filter>
+    </ClInclude>
+    <ClInclude Include="StateCombatConstants.h">
+      <Filter>GameState\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Pikachu.h">
+      <Filter>GameObject\Pokemon\Pikachu</Filter>
+    </ClInclude>
+    <ClInclude Include="PikachuConstants.h">
+      <Filter>GameObject\Pokemon\Pikachu</Filter>
+    </ClInclude>
+    <ClInclude Include="AIHalfHpState.h">
+      <Filter>AI\31%25-61%25HealthState</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSystem.h">
+      <Filter>Save System</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonSizeConstants.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNumberGenerator.h">
+      <Filter>Random</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>GameObject\CollidableStaticObject\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Bush.h">
+      <Filter>GameObject\CollidableStaticObject\Bush</Filter>
+    </ClInclude>
+    <ClInclude Include="BushConstants.h">
+      <Filter>GameObject\CollidableStaticObject\Bush</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLoad.h">
+      <Filter>GameState\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="StateLoadConstants.h">
+      <Filter>GameState\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
